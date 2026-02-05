@@ -72,7 +72,7 @@ export default function AuthLayout({
             </h2>
 
             {imagesText[active]?.subtitle && (
-              <p className="mt-2 font-thin text-gray-600 text-sm text-lg">
+              <p className="mt-2 font-thin text-gray-600 text-lg">
                 {imagesText[active]?.subtitle}
               </p>
             )}
