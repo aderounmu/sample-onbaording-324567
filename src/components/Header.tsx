@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from 'next/image'
 
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 md:border-b md:border-border md:shadow-sm md:bg-white">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary bg-[#ff6602] rounded-lg flex items-center justify-center">
+          {/* <div className="w-8 h-8 bg-primary bg-[#ff6602] rounded-lg flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -25,7 +26,8 @@ const Header = () => {
               <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
             </svg>
           </div>
-          <span className="text-xl font-bold text-black">StreetTak</span>
+          <span className="text-xl font-bold text-black">StreetTak</span> */}
+          <Image src="/logo.png" alt="StreetTak Logo" width={111} height={32} />
         </div>
         <nav className={`hidden md:flex items-center gap-6`}>
           <a
