@@ -1,4 +1,5 @@
 import AuthLayout from "@/components/AuthLayout";
+import { ButtonGroup } from "@/components/ButtonGroup";
 import Header from "@/components/Header";
 import Image from "next/image";
 
@@ -41,7 +42,7 @@ export default function Home() {
     >
       <div className="space-y-6">
 
-        <div>
+        <div className="md:mt-20">
           <h2 className="text-4xl text-[#ff6602] font-semibold mb-2">
             Welcome Back
           </h2>
@@ -61,9 +62,10 @@ export default function Home() {
               <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#ff6602] focus:border-[#ff6602] block w-full p-2.5 "/>
           </div>
 
-         <button className="relative z-0 h-12 w-full rounded-full bg-[#ff6602] px-6 text-neutral-50 border border-[#ff6602]">
+         {/* <button className="relative z-0 h-12 w-full rounded-full bg-[#ff6602] px-6 text-neutral-50 border border-[#ff6602]">
             Log in
-          </button>
+          </button> */}
+           <ButtonGroup/>
         </form>
 
       </div>

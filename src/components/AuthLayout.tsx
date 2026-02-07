@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ButtonGroup } from "./ButtonGroup";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -146,18 +147,7 @@ export default function AuthLayout({
           transition={{ duration: 0.6 }}
           className="w-full max-w-md flex flex-col gap-y-4"
         >
-          {/* <button className="w-full bg-indigo-600 text-white py-3 rounded-md">
-           Sign in 
-          </button>
-          <button className="w-full bg-indigo-600 text-white py-3 rounded-md">
-           Create an account
-          </button> */}
-          <button className="relative z-0 h-12 w-full rounded-full bg-[#ff6602] px-6 text-neutral-50 border border-[#ff6602]">
-            Sign in
-          </button>
-          <button className="relative z-0 h-12 w-full rounded-full  px-6 text-[#ff6602] border border-[#ff6602]">
-            Create an account
-          </button>
+          <ButtonGroup/>
         </motion.div>
       </div>
       <div className="w-full md:w-1/2 bg-[#faeee5] md:flex items-center justify-center px-6 py-10 hidden">
