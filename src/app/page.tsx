@@ -44,15 +44,15 @@ export default function Home() {
 
         <div className="md:mt-20">
           <h2 className="text-4xl text-[#ff6602] font-semibold mb-2">
-            Welcome Back
+            Join Today
           </h2>
           <p className="text-md text-gray-500">
-            Login to your account
+            Create your account and start connecting with your community. Share, discover, and shop smarter with our social shopping app.
           </p>
         </div>
 
         <form className="space-y-4">
-         <div className="mb-6">
+         {/* <div className="mb-6">
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Email</label>
               <input type="text" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#ff6602] focus:border-[#ff6602] block w-full p-2.5 "/>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="mb-6">
               <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">Password</label>
               <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#ff6602] focus:border-[#ff6602] block w-full p-2.5 "/>
-          </div>
+          </div> */}
 
          {/* <button className="relative z-0 h-12 w-full rounded-full bg-[#ff6602] px-6 text-neutral-50 border border-[#ff6602]">
             Log in
