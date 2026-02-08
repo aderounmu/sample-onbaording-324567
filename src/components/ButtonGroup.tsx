@@ -3,7 +3,7 @@ import React from "react";
 import { Separator } from "./ui/separator";
 import { FieldSeparator } from "./ui/field";
 import GoogleIcon from "./svg-icons/google";
-import Image from 'next/image'
+import Image from "next/image";
 
 export const ButtonGroup = () => {
   return (
@@ -18,18 +18,31 @@ export const ButtonGroup = () => {
         <span>Don't have an account? </span>
         <a href="#" className="text-[#ff6602]">Register</a>
       </div> */}
-      
-      <div className="my-4"><FieldSeparator textClassName="bg-[#faeee5]">Or</FieldSeparator></div>
-    <button className="relative z-0 h-10 text-black dark:text-white w-full rounded-full bg-none px-6  border border-slate-300">
-        {/* <div className="flex items-center justify-center gap-2"><Image src="/google.png" alt="Google Icon" width={16} height={16} /><span>Continue with Google</span></div> */}
-        <div className="flex items-center justify-center gap-2"><Image src="/play_store.png" alt="Google Icon" width={90} height={24} /><span>Download From Play Store</span></div>
+
+      <div className="my-4">
+        <FieldSeparator textClassName="bg-[#faeee5]">Or</FieldSeparator>
+      </div>
+       <button className="relative z-0 h-10 w-full text-black dark:text-white rounded-full bg-none px-6  border border-slate-300">
+        {/* <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Continue with Apple</span></div> */}
+        <div className="flex items-center justify-center gap-2">
+          <Image src="/play_store.svg" alt="Play Store Icon" width={20} height={20} />
+          <div className="flex flex-col items-start text-xs -gap-y-4">
+            <span>Download on the</span>
+            <span className=" font-bold text-sm ">Play store</span>
+          </div>
+        </div>
       </button>
 
       <button className="relative z-0 h-10 w-full text-black dark:text-white rounded-full bg-none px-6  border border-slate-300">
-               {/* <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Continue with Apple</span></div> */}
-               <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Download from Apple Store</span></div>
+        {/* <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Continue with Apple</span></div> */}
+        <div className="flex items-center justify-center gap-2">
+          <Image src="/apple.png" alt="Apple Icon" width={20} height={20} />
+          <div className="flex flex-col items-start text-xs -gap-y-4">
+            <span>Download on the</span>
+            <span className=" font-bold text-sm ">App store</span>
+          </div>
+        </div>
       </button>
-        
     </>
   );
 };
