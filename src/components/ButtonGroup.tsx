@@ -21,11 +21,13 @@ export const ButtonGroup = () => {
       
       <div className="my-4"><FieldSeparator textClassName="bg-[#faeee5]">Or</FieldSeparator></div>
     <button className="relative z-0 h-10 text-black dark:text-white w-full rounded-full bg-none px-6  border border-slate-300">
-        <div className="flex items-center justify-center gap-2"><Image src="/google.png" alt="Google Icon" width={16} height={16} /><span>Continue with Google</span></div>
+        {/* <div className="flex items-center justify-center gap-2"><Image src="/google.png" alt="Google Icon" width={16} height={16} /><span>Continue with Google</span></div> */}
+        <div className="flex items-center justify-center gap-2"><Image src="/play_store.png" alt="Google Icon" width={90} height={24} /><span>Download From Play Store</span></div>
       </button>
 
       <button className="relative z-0 h-10 w-full text-black dark:text-white rounded-full bg-none px-6  border border-slate-300">
-               <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Continue with Apple</span></div>
+               {/* <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Continue with Apple</span></div> */}
+               <div className="flex items-center justify-center gap-2"><Image src="/apple.png" alt="Apple Icon" width={16} height={16} /><span>Download from Apple Store</span></div>
       </button>
         
     </>
