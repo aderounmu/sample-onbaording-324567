@@ -93,6 +93,7 @@ export default function AuthLayout({
                 hover:shadow-[0_35px_70px_-15px_rgba(0,0,0,0.45)]
                 transition-shadow
                 duration-500
+                --md:w-1/2
 
                 border
                 border-white/30
@@ -109,8 +110,10 @@ export default function AuthLayout({
                 className="
                     w-full
                     h-95
-                    md:h-72
+                    md:h-95
                     object-cover
+                    --md:object-scale-down
+                    md:object-contain
                 "
                 initial={{ opacity: 0, scale: 1.08 }}
                 animate={{ opacity: 1, scale: 1 }}
